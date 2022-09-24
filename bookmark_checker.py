@@ -36,7 +36,7 @@ def main():
             else:
                 print(name + ' | OK')
         
-        with open('bad_url.txt', 'w') as w:
+        with open('bad_url.txt', 'w', encoding='utf-8') as w:
             for each in bad_url:
                 w.write(each + '\n')
     
