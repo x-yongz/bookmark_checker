@@ -1,3 +1,7 @@
 This is a simply python script to check if your bookmarks are still valid.
 
-It generates a bad-url.txt that list all the links that needs to be checked.
+Usage:
+python bookmark_checker.py -f [bookmarkfile.html]
+
+Output:
+bad_url.txt that contains all the URLs that is either unreachable or needs manual inspection
