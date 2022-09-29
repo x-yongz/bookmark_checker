@@ -28,11 +28,13 @@ def main():
                 http_code = 0
                 
             if http_code == 0: 
-                bad_url.append(name + ' | MANUAL CHECK REQUIRED')
-                print(name + ' | MANUAL CHECK REQUIRED')
+                out_0 = name + ' | MANUAL CHECK REQUIRED'
+                bad_url.append(out_0)
+                print(out_0)
             elif http_code != 200:
-                bad_url.append(name + ' | ' + str(http_code) + ' ERROR')
-                print(name + ' | ' + str(http_code) + ' ERROR')
+                out_1 = name + ' | ' + str(http_code) + ' ERROR'
+                bad_url.append(out_1)
+                print(out_1)
             else:
                 print(name + ' | OK')
         
